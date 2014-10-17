@@ -16,5 +16,7 @@ module.exports = BastionBase.extend({
         this.generateFromTemplate('plugin', 'Gemfile.tpl', "Gemfile");
         this.generateFromTemplate('plugin', 'LICENSE.tpl', "LICENSE");
         this.generateFromTemplate('plugin', 'README.md.tpl', "README.md");
+
+        this.generateFromTemplate('plugin', 'lib_tasks_rubocop.rake.tpl', "lib/tasks/" + this.name + "/rubocop.rake");
     }
 });

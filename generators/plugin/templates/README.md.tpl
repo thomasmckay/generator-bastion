@@ -1,1 +1,1 @@
-README for <%= module_title %>
+README for <%= module_title %> plugin
