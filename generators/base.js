@@ -54,7 +54,7 @@ module.exports = yeoman.generators.Base.extend({
         context = {
             year: date.getFullYear(),
             module: this.module,
-            module_title: changeCase.titleCase(this.module),
+            Module: changeCase.titleCase(this.module),
             type: type
         };
 

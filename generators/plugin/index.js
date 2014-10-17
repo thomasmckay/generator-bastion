@@ -18,5 +18,9 @@ module.exports = BastionBase.extend({
         this.generateFromTemplate('plugin', 'README.md.tpl', "README.md");
 
         this.generateFromTemplate('plugin', 'lib_tasks_rubocop.rake.tpl', "lib/tasks/" + this.name + "/rubocop.rake");
+
+        this.generateFromTemplate('plugin', 'config_mount_engine.rb.tpl', "config/mount_engine.rb");
+        this.generateFromTemplate('plugin', 'config_overrides.rb.tpl', "config/overrides.rb");
+        this.generateFromTemplate('plugin', 'config_routes.rb.tpl', "config/routes.rb");
     }
 });

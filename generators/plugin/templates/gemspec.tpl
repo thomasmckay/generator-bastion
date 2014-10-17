@@ -19,7 +19,7 @@ require "<%= module %>/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "<%= module %>"
-  s.version     = <%= module_title %>::VERSION
+  s.version     = <%= Module %>::VERSION
   s.authors     = ["TODO: authors"]
   s.email       = ["TODO: email"]
   s.homepage    = "TODO: homepage"
