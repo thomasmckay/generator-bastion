@@ -44,7 +44,7 @@ yo bastion:factory products/ProductBulk
 
 ##Configuration
 
-By default, the generator assumes that files should be placed in a directory denoted by `module/` within `app/assets/javascripts/bsation`.
+By default, the generator assumes that files should be placed in a directory denoted by `module/` within `app/assets/javascripts/bastion`.
 However, this can be customized by adding the following to your `.yo-rc.json` file at the root of your project.
 
 ```
