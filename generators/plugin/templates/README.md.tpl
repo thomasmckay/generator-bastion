@@ -1,0 +1,1 @@
+README for <%= module_title %>
