@@ -6,11 +6,11 @@ module.exports = BastionBase.extend({
     constructor: function () {
         yeoman.generators.NamedBase.apply(this, arguments);
 
-        //this.module = this.name;
+        this.module = this.name;
     },
     buildTemplate: function () {
-        //var file = require('file-utils');
-        grunt.file.mkdir(this.name);
-        //this.generateTemplate('yo_rc');
+        grunt.file.write('.yo-rc.json',
+                         "{\"generator-bastion\": {\"appRoot\": \"app/assets/javascripts/" + this.name + "\"}}");
+        this.generateFromTemplate('plugin', 'gemspec.tpl', this.name + ".gemspec");
     }
 });

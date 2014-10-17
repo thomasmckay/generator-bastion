@@ -43,5 +43,21 @@ module.exports = yeoman.generators.Base.extend({
         if (includeTestFile) {
             this.template(testTemplateFilename, testFilename, context);
         }
+    },
+    generateFromTemplate: function (type, templateFilename, filename) {
+        var filename, templateFilename, date, context, base;
+
+        this.sourceRoot(this.sourceRoot() + '../../../' + type + '/templates');
+
+        date = new Date();
+
+        context = {
+            year: date.getFullYear(),
+            module: this.module,
+            module_title: changeCase.titleCase(this.module),
+            type: type
+        };
+
+        this.template(templateFilename, filename, context);
     }
 });
