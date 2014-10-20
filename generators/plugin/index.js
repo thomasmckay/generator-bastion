@@ -22,5 +22,6 @@ module.exports = BastionBase.extend({
         this.generateFromTemplate('plugin', 'config_mount_engine.rb.tpl', "config/mount_engine.rb");
         this.generateFromTemplate('plugin', 'config_overrides.rb.tpl', "config/overrides.rb");
         this.generateFromTemplate('plugin', 'config_routes.rb.tpl', "config/routes.rb");
+        this.generateFromTemplate('plugin', 'config_routes_api.rb.tpl', "config/routes/api/" + this.name + ".rb");
     }
 });
