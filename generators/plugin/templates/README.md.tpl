@@ -1,1 +1,1 @@
-README for <%= Module %> plugin
+README for <%= pluginTitleSplit %> plugin

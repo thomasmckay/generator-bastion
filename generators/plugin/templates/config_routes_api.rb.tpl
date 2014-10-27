@@ -1,4 +1,4 @@
-<%= Module %>::Engine.routes.draw do
-  scope :<%= module %>, :path => '/<%= module %>' do
+<%= pluginTitle %>::Engine.routes.draw do
+  scope :<%= pluginFile %>, :path => '/<%= pluginDash %>' do
   end
 end

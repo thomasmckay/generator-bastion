@@ -1,7 +1,7 @@
 Foreman::Application.routes.draw do
 
-  scope :<%= module %>, :module => :<%= module %> do
-    match '/<%= module %>' => '<%= module %>#plugin', :via => :get
+  scope :<%= pluginTitle %>, :module => :<%= pluginTitle %> do
+    match '/<%= pluginDash %>' => '<%= pluginTitle %>#plugin', :via => :get
   end
 
 end

@@ -1,3 +1,3 @@
 Foreman::Application.routes.draw do
-  mount <%= Module %>::Engine, :at => '/', :as => '<%= module %>'
+  mount <%= pluginTitle %>::Engine, :at => '/', :as => '<%= pluginDash %>'
 end

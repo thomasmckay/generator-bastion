@@ -1,6 +1,6 @@
-<%= Module %>::Engine.routes.draw do
+<%= pluginTitle %>::Engine.routes.draw do
 
-  match '/:<%= module %>_page/(*path)', :to => "<%= module %>#index"
-  match '/<%= module %>/(*path)', :to => "<%= module %>#index_ie"
+  match '/:<%= pluginFile %>_page/(*path)', :to => "<%= pluginTitle %>#index"
+  match '/<%= pluginDash %>/(*path)', :to => "<%= pluginTitle %>#index_ie"
 
 end
